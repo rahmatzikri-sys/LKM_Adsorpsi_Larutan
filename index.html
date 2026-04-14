@@ -72,6 +72,13 @@ const kamusBahasa = {
     'pg4_info_title':     "📌 Informasi Praktikum",
     'pg4_info_body':      "<strong>Judul:</strong> Adsorpsi Larutan<br><strong>Mata Kuliah:</strong> Praktikum Kimia Fisika 1<br><strong>SKS:</strong> 1 SKS Praktikum<br><strong>Waktu:</strong> ±170 menit (termasuk simulasi digital)",
     'pg4_cpl_title':      "📚 Capaian Pembelajaran Lulusan (CPL)",
+    'pg4_th1': "Kode CPL", 'pg4_th2': "Deskripsi Capaian", 'pg4_th3': "Indikator",
+    'pg4_cpl1_code': "CPL-1",
+    'pg4_cpl1_desc': "Mampu menguasai dan mengaplikasikan konsep teoritis kimia meliputi struktur, dinamika, energi, pemisahan, analisis, sintesis, dan karakterisasi untuk menyelesaikan masalah dalam bidang kimia dan pembelajaran kimia secara sistematis.",
+    'pg4_cpl1_ind':  "Mampu menjelaskan model Langmuir dan Freundlich dengan benar.",
+    'pg4_cpl2_code': "CPL-2",
+    'pg4_cpl2_desc': "Mampu berkreativitas dan berinovasi sesuai perkembangan pengetahuan di bidang kimia fisik, analitik, organik, anorganik, biokimia serta memformulasikan penyelesaian masalah prosedural berdasarkan analisis data dan konsep ilmiah.",
+    'pg4_cpl2_ind':  "Dapat menghitung Cₑ dan qₑ serta memfitting ke model isoterm.",
     'pg4_cpl3_code': "CPL-3",
     'pg4_cpl3_desc': "Mampu merencanakan, melaksanakan, dan melaporkan percobaan kimia secara saintifik dengan menerapkan prinsip keselamatan dan keamanan kerja (K3).",
     'pg4_cpl3_ind':  "Menyelesaikan seluruh tahap simulasi dan merekam data.",
@@ -259,9 +266,16 @@ const kamusBahasa = {
     'pg4_info_title': "📌 Practicum Information",
     'pg4_info_body': "<strong>Title:</strong> Solution Adsorption<br><strong>Course:</strong> Physical Chemistry Lab 1<br><strong>Credits:</strong> 1 SKS<br><strong>Duration:</strong> ±170 minutes",
     'pg4_cpl_title': "📚 Graduate Learning Outcomes (CPL)",
+    'pg4_th1': "CPL Code", 'pg4_th2': "Description", 'pg4_th3': "Indicator",
+    'pg4_cpl1_code': "CPL-1",
+    'pg4_cpl1_desc': "Able to master and apply theoretical concepts of chemistry.",
+    'pg4_cpl1_ind':  "Explain Langmuir and Freundlich models correctly.",
+    'pg4_cpl2_code': "CPL-2",
+    'pg4_cpl2_desc': "Able to be creative and innovative in chemistry fields.",
+    'pg4_cpl2_ind':  "Calculate Cₑ and qₑ and fit isotherm models.",
     'pg4_cpl3_code': "CPL-3",
-    'pg4_cpl3_desc': "Able to plan, conduct, and report chemistry experiments scientifically with safety and occupational health principles (K3).",
-    'pg4_cpl3_ind':  "Complete all simulation stages and record data.",
+    'pg4_cpl3_desc': "Able to plan, conduct, and report chemistry experiments scientifically.",
+    'pg4_cpl3_ind':  "Complete all simulation stages.",
     'pg4_subcpmk_title': "🔬 Lab CPMK: CPMK 3 — Able to analyze surface chemistry phenomena quantitatively.",
     'pg4_subcpmk_1': "Describe adsorption concept vs absorption.",
     'pg4_subcpmk_2': "Determine qₑ and Cₑ from titration data.",
@@ -423,71 +437,116 @@ const teoriHTML = {
   id: `
     <h3>1. Konsep Dasar Adsorpsi &amp; Karbon Aktif</h3>
     <p>Adsorpsi adalah proses menempelnya zat terlarut (adsorbat) pada permukaan zat penyerap (adsorben) karena adanya gaya tarik menarik hingga tercapai kondisi seimbang, di mana tidak ada lagi zat yang menempel. Proses ini terjadi karena partikel cenderung berkumpul di permukaan penyerap, terutama pada bahan berpori seperti karbon aktif (Musah et al., 2022).</p>
-    <p>Activated carbon (AC) merupakan bahan karbon yang berasal dari material organik kaya karbon seperti pelepah kelapa sawit, tempurung kelapa, kayu, batu bara, dan gambut. Berdasarkan bentuknya, AC dibedakan menjadi granul, bubuk, dan pelet, dengan struktur berpori (mikro, meso, dan makro) serta luas permukaan antara 500–3000 m²/g.</p>
-    <p>Produksi Oil Palm Frond (OPF) di Indonesia menunjukkan tren meningkat: 150,2 juta ton pada 2018, 152,3 juta ton pada 2019, dan 156,5 juta ton pada 2020 (Nabila et al., 2023). Komposisi kimia OPF terdiri atas selulosa (40,03–51,50%), hemiselulosa (17,40–27,08%), lignin (14,49–22,2%), abu (3,6–4,67%), serta ekstraktif (3,81–8,71%) (Zakaria et al., 2024a).</p>
+    <p>Activated carbon (AC) merupakan bahan karbon yang berasal dari material organik kaya karbon seperti pelepah kelapa sawit, tempurung kelapa, kayu, batu bara, dan gambut. Berdasarkan bentuknya, AC dibedakan menjadi granul, bubuk, dan pelet, dengan struktur berpori (mikro, meso, dan makro) serta luas permukaan antara 500–3000 m²/g. Karena sifat porositas dan reaktivitas permukaannya yang tinggi, AC digunakan secara luas dalam pengolahan air limbah, industri petrokimia, farmasi, hingga penyimpanan energi seperti superkapasitor (Sultana et al., 2022).</p>
+    <p>Produksi Oil Palm Frond (OPF) di Indonesia menunjukkan tren meningkat: 150,2 juta ton pada 2018, 152,3 juta ton pada 2019, dan 156,5 juta ton pada 2020 (Nabila et al., 2023). Komposisi kimia OPF terdiri atas selulosa (40,03–51,50%), hemiselulosa (17,40–27,08%), lignin (14,49–22,2%), abu (3,6–4,67%), serta ekstraktif (3,81–8,71%) (Zakaria et al., 2024a). Kandungan karbon yang tinggi menjadikan OPF bahan potensial untuk pembuatan karbon aktif.</p>
+    <p>Penelitian oleh (Zikri et al., 2022) menunjukkan bahwa arang dari pelepah kelapa sawit yang dikarbonisasi pada suhu 400–600°C memiliki luas permukaan sekitar 600 m²/g, dengan efisiensi penyerapan Fe(III) tertinggi pada suhu 500°C sebesar 0,054 mg dalam 100 mL air gambut.</p>
     <h3 style="margin-top:25px;">2. Jenis Adsorpsi</h3>
+    <p>Proses adsorpsi terjadi karena adanya gaya tarik antara suatu bahan (substrat) dengan permukaan bahan lain (adsorben), baik pada sistem cair–gas, cair–cair, maupun padat–cair. Berdasarkan mekanismenya, adsorpsi dibedakan menjadi dua jenis utama:</p>
     <ul>
-      <li><strong>Adsorpsi Fisik (Physisorption):</strong> Terjadi karena gaya Van der Waals yang lemah tanpa perubahan struktur kimia. Energi yang dilepaskan relatif kecil, sekitar 20 kJ/mol, dan bersifat reversibel (Atkins et al., 2023).</li>
-      <li><strong>Adsorpsi Kimia (Chemisorption):</strong> Melibatkan pembentukan ikatan kimia antara adsorbat dan adsorben, sehingga bersifat irreversibel (Alaqarbeh, 2021). Energi ikatan yang dilepaskan jauh lebih besar, sekitar 200 kJ/mol.</li>
+      <li><strong>Adsorpsi Fisik (Physisorption):</strong> Terjadi karena gaya Van der Waals yang lemah tanpa perubahan struktur kimia. Energi yang dilepaskan relatif kecil, sekitar 20 kJ/mol, dan bersifat reversibel karena tidak terjadi perpindahan elektron antara adsorbat dan adsorben (Atkins et al., 2023). Adsorpsi jenis ini umumnya terjadi pada suhu rendah, tidak spesifik terhadap jenis adsorben, serta dapat membentuk lapisan tunggal maupun berlapis-lapis di permukaan adsorben (Jamilah et al., 2024).</li>
+      <li><strong>Adsorpsi Kimia (Chemisorption):</strong> Melibatkan pembentukan ikatan kimia antara adsorbat dan adsorben, sehingga bersifat irreversibel (Alaqarbeh, 2021). Energi ikatan yang dilepaskan jauh lebih besar, sekitar 200 kJ/mol, dan proses ini umumnya bersifat eksotermis. Adsorpsi kimia biasanya menghasilkan lapisan tunggal (monolayer) yang menempel kuat pada permukaan (Jamilah et al., 2024).</li>
     </ul>
     <div style="text-align:center;margin:20px 0;">
       <img src="gambar1.jpg" alt="Ilustrasi Adsorpsi" style="max-width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1);margin-bottom:10px;">
       <br><small><i>Gambar 1. Ilustrasi interaksi antara permukaan adsorben dan adsorbat pada proses adsorpsi fisik dan adsorpsi kimia (Jamilah et al., 2024)</i></small>
     </div>
     <h3 style="margin-top:25px;">3. Karakteristik &amp; Faktor yang Mempengaruhi Adsorpsi</h3>
+    <p>Efisiensi adsorpsi pada fase cair dipengaruhi oleh beberapa parameter, di antaranya:</p>
     <div style="text-align:center;margin:20px 0;">
       <img src="gambar2.jpg" alt="Ilustrasi Kedua" style="max-width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1);margin-bottom:10px;">
       <br><small><i>Gambar 2. Penjelasan atau keterangan untuk gambar kedua Anda diletakkan di sini.</i></small>
     </div>
-    <p><strong>a. Pengaruh Konsentrasi Awal Adsorbat</strong><br>Konsentrasi awal adsorbat sangat memengaruhi efisiensi dan kapasitas adsorpsi. Umumnya, efisiensi penghilangan menurun saat konsentrasi awal meningkat, disebabkan oleh kejenuhan situs aktif pada permukaan adsorben.</p>
-    <p><strong>b. Efek pH Larutan</strong><br>pH merupakan parameter paling berpengaruh dalam proses adsorpsi karena menentukan muatan permukaan adsorben, tingkat ionisasi adsorbat, serta interaksi elektrostatik di antara keduanya.</p>
-    <p><strong>c. Efek Dosis Adsorben</strong><br>Peningkatan dosis adsorben umumnya meningkatkan efisiensi penghilangan karena lebih banyak situs aktif yang tersedia.</p>
-    <p><strong>d. Efek Ukuran Partikel Adsorben</strong><br>Partikel berukuran kecil memiliki luas permukaan dan jumlah situs aktif lebih besar, sehingga meningkatkan efisiensi dan laju adsorpsi.</p>
-    <p><strong>e. Efek Temperatur Larutan</strong><br>Pada chemisorption, efisiensi meningkat seiring kenaikan suhu, sedangkan pada physisorption, suhu tinggi justru menurunkan efisiensi.</p>
-    <p><strong>f. Kecepatan Pengadukan &amp; Waktu Kontak</strong><br>Kecepatan pengadukan mempercepat difusi ion ke permukaan adsorben. Waktu kontak yang terlalu lama dapat menyebabkan desorpsi.</p>
+    <p><strong>a. Pengaruh Konsentrasi Awal Adsorbat</strong><br>Konsentrasi awal adsorbat sangat memengaruhi efisiensi dan kapasitas adsorpsi karena menentukan jumlah molekul yang dapat terikat pada keadaan setimbang. Umumnya, efisiensi penghilangan menurun saat konsentrasi awal meningkat, disebabkan oleh kejenuhan situs aktif pada permukaan adsorben.</p>
+    <p><strong>b. Efek pH Larutan</strong><br>pH merupakan parameter paling berpengaruh dalam proses adsorpsi karena menentukan muatan permukaan adsorben, tingkat ionisasi adsorbat, serta interaksi elektrostatik di antara keduanya. Pada kondisi asam, permukaan adsorben terprotonasi dan bermuatan positif, sedangkan pada kondisi basa, adsorben terdeprotonasi menjadi bermuatan negatif.</p>
+    <p><strong>c. Efek Dosis Adsorben</strong><br>Jumlah adsorben menentukan rasio antara adsorben dan adsorbat. Peningkatan dosis adsorben umumnya meningkatkan efisiensi penghilangan karena lebih banyak situs aktif yang tersedia, tetapi kapasitas adsorpsi per satuan massa (q<sub>e</sub>) dapat menurun akibat ketidakterisian penuh situs aktif.</p>
+    <p><strong>d. Efek Ukuran Partikel Adsorben</strong><br>Ukuran partikel berpengaruh besar terhadap luas permukaan spesifik (SSA). Partikel berukuran kecil memiliki luas permukaan dan jumlah situs aktif lebih besar, sehingga meningkatkan efisiensi dan laju adsorpsi.</p>
+    <p><strong>e. Efek Temperatur Larutan</strong><br>Suhu berperan penting dalam menentukan energi kinetik, aktivitas permukaan, dan kestabilan adsorben. Pada <em>chemisorption</em>, efisiensi meningkat seiring kenaikan suhu, sedangkan pada <em>physisorption</em>, suhu tinggi justru menurunkan efisiensi karena melemahkan ikatan adsorbat–adsorben.</p>
+    <p><strong>f. Kecepatan Pengadukan &amp; Waktu Kontak</strong><br>Kecepatan pengadukan mempercepat difusi ion ke permukaan adsorben. Sementara waktu kontak memengaruhi efisiensi; peningkatan waktu kontak mengurangi hambatan perpindahan massa, namun kontak yang terlalu lama justru dapat menyebabkan desorpsi.</p>
     <h3 style="margin-top:25px;">4. Isoterm Adsorpsi</h3>
-    <p><strong>A. Model Isoterm Langmuir</strong><br>Menggambarkan proses adsorpsi pada permukaan adsorben yang homogen, membentuk lapisan tunggal (monolayer).</p>
+    <p>Karakteristik dan mekanisme penyerapan ion Fe(III) dapat dianalisis menggunakan model isoterm Langmuir dan Freundlich. Melalui fitting data eksperimen, diperoleh parameter penting seperti kapasitas maksimum adsorpsi (q<sub>max</sub>), konstanta Langmuir (K<sub>L</sub>), dan parameter Freundlich (K<sub>f</sub> dan n).</p>
+    <p><strong>A. Model Isoterm Langmuir</strong><br>Menggambarkan proses adsorpsi pada permukaan adsorben yang homogen, membentuk lapisan tunggal (<em>monolayer</em>). Semua situs aktif di permukaan dianggap memiliki energi yang sama.</p>
     <div style="background-color:#fcfcfc;padding:15px;border-left:4px solid #007bff;margin:10px 0;font-family:'Times New Roman',Times,serif;font-size:1.1rem;overflow-x:auto;">
       <i>Bentuk Non-linear:</i><br>
       q<sub>e</sub> = (q<sub>max</sub> · K<sub>L</sub> · C<sub>e</sub>) / (1 + K<sub>L</sub> · C<sub>e</sub>) &nbsp; ... (1)<br><br>
       <i>Bentuk Linear:</i><br>
-      C<sub>e</sub>/q<sub>e</sub> = (1/q<sub>max</sub>) · C<sub>e</sub> + 1/(q<sub>max</sub> · K<sub>L</sub>) &nbsp; ... (2)
+      C<sub>e</sub>/q<sub>e</sub> = (1/q<sub>max</sub>) · C<sub>e</sub> + 1/(q<sub>max</sub> · K<sub>L</sub>) &nbsp; ... (2)<br>
+      <span style="color:#555;font-size:0.9rem;">(y = mx + c)</span>
     </div>
+    <p>Model ini dianalisis dengan memplot grafik C<sub>e</sub>/q<sub>e</sub> terhadap C<sub>e</sub>.</p>
     <p><strong>B. Model Isoterm Freundlich</strong><br>Menggambarkan adsorpsi pada permukaan adsorben yang tidak seragam (heterogen), memungkinkan pembentukan multilayer.</p>
     <div style="background-color:#fcfcfc;padding:15px;border-left:4px solid #28a745;margin:10px 0;font-family:'Times New Roman',Times,serif;font-size:1.1rem;overflow-x:auto;">
       <i>Bentuk Non-linear:</i><br>
       q<sub>e</sub> = K<sub>f</sub> · C<sub>e</sub><sup>1/n<sub>f</sub></sup> &nbsp; ... (3)<br><br>
       <i>Bentuk Linear:</i><br>
-      Log q<sub>e</sub> = (1/n<sub>f</sub>) · Log C<sub>e</sub> + Log K<sub>f</sub> &nbsp; ... (4)
+      Log q<sub>e</sub> = (1/n<sub>f</sub>) · Log C<sub>e</sub> + Log K<sub>f</sub> &nbsp; ... (4)<br>
+      <span style="color:#555;font-size:0.9rem;">(y = mx + c)</span>
     </div>
+    <p>Model Freundlich dianalisis dengan memplot log q<sub>e</sub> terhadap log C<sub>e</sub>.</p>
     <h3 style="margin-top:25px;">5. Keunggulan Pelepah Sawit dalam Praktik Green Chemistry</h3>
-    <p>Pelepah kelapa sawit (Oil Palm Frond/OPF) merupakan salah satu limbah biomassa terbesar dari perkebunan kelapa sawit yang jumlahnya dapat mencapai ratusan juta ton per tahun.</p>
+    <p>Pelepah kelapa sawit (Oil Palm Frond/OPF) merupakan salah satu limbah biomassa terbesar dari perkebunan kelapa sawit yang jumlahnya dapat mencapai ratusan juta ton per tahun. Di Sumatera Selatan, kelapa sawit adalah komoditas utama, sehingga pelepah sawit sangat mudah diperoleh, termasuk di area kampus Universitas Sriwijaya (Unsri).</p>
     <div style="text-align:center;margin:20px 0;">
       <img src="gambar3.jpg" alt="Ilustrasi Ketiga" style="max-width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1);margin-bottom:10px;">
       <br><small><i>Gambar 3. Penjelasan atau keterangan untuk gambar ketiga Anda diletakkan di sini.</i></small>
     </div>
-    <p>Dari perspektif green chemistry, pemanfaatan OPF menjadi arang aktif sejalan dengan prinsip pengurangan limbah dan pemanfaatan sumber daya terbarukan.</p>
+    <p>Dari perspektif <em>green chemistry</em>, pemanfaatan OPF menjadi arang aktif sejalan dengan prinsip pengurangan limbah dan pemanfaatan sumber daya terbarukan. Penggunaan OPF dapat mengurangi ketergantungan pada bahan baku lain seperti kayu atau batubara, sekaligus memberikan nilai tambah pada limbah yang selama ini kurang termanfaatkan.</p>
+    <p>Selain manfaat teknis dan lingkungan, pemanfaatan OPF untuk arang aktif juga membawa dampak sosial-ekonomi yang signifikan. Pengolahan OPF dapat membuka peluang usaha baru di daerah penghasil sawit, termasuk sekitar kampus Unsri, serta menciptakan lapangan kerja dan meningkatkan pendapatan masyarakat lokal. Pendekatan ini mendukung ekonomi sirkular dengan mengubah limbah menjadi produk bernilai tinggi sekaligus membantu pengurangan emisi karbon.</p>
   `,
   en: `
     <h3>1. Basic Concepts of Adsorption &amp; Activated Carbon</h3>
-    <p>Adsorption is the process by which dissolved substances (adsorbate) accumulate on the surface of an absorbent material (adsorbent) due to attractive forces until equilibrium is reached (Musah et al., 2022).</p>
-    <p>Activated carbon (AC) is a carbon-based material derived from organic, carbon-rich precursors such as oil palm fronds, coconut shells, wood, coal, and peat, with a specific surface area of 500–3000 m²/g.</p>
+    <p>Adsorption is the process by which dissolved substances (adsorbate) accumulate on the surface of an absorbent material (adsorbent) due to attractive forces until equilibrium is reached, where no further accumulation occurs. This happens because particles tend to concentrate at surfaces, particularly on porous materials such as activated carbon (Musah et al., 2022).</p>
+    <p>Activated carbon (AC) is a carbon-based material derived from organic, carbon-rich precursors such as oil palm fronds, coconut shells, wood, coal, and peat. Based on form, AC is classified as granular, powdered, or pelletized, featuring microporous, mesoporous, and macroporous structures with a specific surface area of 500–3000 m²/g. Due to its high porosity and surface reactivity, AC is widely used in wastewater treatment, petrochemical industries, pharmaceuticals, and energy storage such as supercapacitors (Sultana et al., 2022).</p>
+    <p>Oil Palm Frond (OPF) production in Indonesia shows an increasing trend: 150.2 million tonnes in 2018, 152.3 million tonnes in 2019, and 156.5 million tonnes in 2020 (Nabila et al., 2023). The chemical composition of OPF consists of cellulose (40.03–51.50%), hemicellulose (17.40–27.08%), lignin (14.49–22.2%), ash (3.6–4.67%), and extractives (3.81–8.71%) (Zakaria et al., 2024a). Its high carbon content makes OPF a promising raw material for activated carbon production.</p>
+    <p>Research by Zikri et al. (2022) demonstrated that charcoal from oil palm fronds carbonized at 400–600°C has a surface area of approximately 600 m²/g, with the highest Fe(III) adsorption efficiency at 500°C of 0.054 mg per 100 mL of peat water.</p>
     <h3 style="margin-top:25px;">2. Types of Adsorption</h3>
+    <p>The adsorption process occurs due to attractive forces between a substance (substrate) and the surface of another material (adsorbent), in liquid–gas, liquid–liquid, or solid–liquid systems. Based on mechanism, adsorption is classified into two main types:</p>
     <ul>
-      <li><strong>Physical Adsorption (Physisorption):</strong> Via weak Van der Waals forces, reversible, ~20 kJ/mol (Atkins et al., 2023).</li>
-      <li><strong>Chemical Adsorption (Chemisorption):</strong> Forms chemical bonds, irreversible, ~200 kJ/mol (Alaqarbeh, 2021).</li>
+      <li><strong>Physical Adsorption (Physisorption):</strong> Occurs via weak Van der Waals forces without changes to the chemical structure. The energy released is relatively small, around 20 kJ/mol, and the process is reversible since no electron transfer occurs (Atkins et al., 2023). Physisorption typically occurs at low temperatures and can form monolayers or multilayers (Jamilah et al., 2024).</li>
+      <li><strong>Chemical Adsorption (Chemisorption):</strong> Involves the formation of chemical bonds between the adsorbate and adsorbent, making it irreversible (Alaqarbeh, 2021). The binding energy released is much greater, around 200 kJ/mol. Chemisorption usually produces a firmly bound monolayer (Jamilah et al., 2024).</li>
     </ul>
-    <h3 style="margin-top:25px;">3. Adsorption Isotherms</h3>
-    <p><strong>A. Langmuir Isotherm Model</strong><br>Homogeneous monolayer adsorption.</p>
-    <div style="background-color:#fcfcfc;padding:15px;border-left:4px solid #007bff;margin:10px 0;font-family:'Times New Roman',Times,serif;font-size:1.1rem;">
-      q<sub>e</sub> = (q<sub>max</sub> · K<sub>L</sub> · C<sub>e</sub>) / (1 + K<sub>L</sub> · C<sub>e</sub>)<br>
-      C<sub>e</sub>/q<sub>e</sub> = (1/q<sub>max</sub>) · C<sub>e</sub> + 1/(q<sub>max</sub> · K<sub>L</sub>)
+    <div style="text-align:center;margin:20px 0;">
+      <img src="gambar1.jpg" alt="Adsorption Illustration" style="max-width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1);margin-bottom:10px;">
+      <br><small><i>Figure 1. Illustration of the interaction between the adsorbent surface and adsorbate (Jamilah et al., 2024)</i></small>
     </div>
-    <p><strong>B. Freundlich Isotherm Model</strong><br>Heterogeneous multilayer adsorption.</p>
-    <div style="background-color:#fcfcfc;padding:15px;border-left:4px solid #28a745;margin:10px 0;font-family:'Times New Roman',Times,serif;font-size:1.1rem;">
-      q<sub>e</sub> = K<sub>f</sub> · C<sub>e</sub><sup>1/n<sub>f</sub></sup><br>
-      Log q<sub>e</sub> = (1/n<sub>f</sub>) · Log C<sub>e</sub> + Log K<sub>f</sub>
+    <h3 style="margin-top:25px;">3. Characteristics &amp; Factors Affecting Adsorption</h3>
+    <p>Adsorption efficiency in the liquid phase is influenced by several parameters:</p>
+    <div style="text-align:center;margin:20px 0;">
+      <img src="gambar2.jpg" alt="Second Illustration" style="max-width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1);margin-bottom:10px;">
+      <br><small><i>Figure 2. Caption for your second figure goes here.</i></small>
     </div>
+    <p><strong>a. Initial Adsorbate Concentration</strong><br>The initial concentration significantly affects adsorption efficiency and capacity as it determines the number of molecules that can bind at equilibrium. Generally, removal efficiency decreases as concentration increases due to saturation of active sites.</p>
+    <p><strong>b. Solution pH</strong><br>pH is the most influential parameter in adsorption as it determines the surface charge of the adsorbent, the ionization state of the adsorbate, and electrostatic interactions between them. Under acidic conditions, the adsorbent surface is protonated and positively charged; under basic conditions, it becomes negatively charged.</p>
+    <p><strong>c. Adsorbent Dose</strong><br>The amount of adsorbent determines the adsorbent-to-adsorbate ratio. Increasing adsorbent dose generally improves removal efficiency due to more available active sites, but adsorption capacity per unit mass (q<sub>e</sub>) may decrease.</p>
+    <p><strong>d. Particle Size</strong><br>Particle size greatly affects specific surface area (SSA). Smaller particles provide greater surface area and more active sites, increasing adsorption efficiency and rate.</p>
+    <p><strong>e. Temperature</strong><br>Temperature plays an important role in determining kinetic energy, surface activity, and adsorbent stability. In chemisorption, efficiency increases with temperature; in physisorption, high temperatures reduce efficiency by weakening the adsorbate–adsorbent bond.</p>
+    <p><strong>f. Stirring Speed &amp; Contact Time</strong><br>Stirring speed accelerates ion diffusion to the adsorbent surface. Contact time affects efficiency — increasing contact time reduces mass transfer resistance, but excessively long contact may cause desorption.</p>
+    <h3 style="margin-top:25px;">4. Adsorption Isotherms</h3>
+    <p>The characteristics and mechanism of Fe(III) adsorption can be analyzed using Langmuir and Freundlich isotherm models. Through fitting experimental data, important parameters such as maximum adsorption capacity (q<sub>max</sub>), Langmuir constant (K<sub>L</sub>), and Freundlich parameters (K<sub>f</sub> and n) are obtained.</p>
+    <p><strong>A. Langmuir Isotherm Model</strong><br>Describes adsorption on a homogeneous adsorbent surface forming a monolayer. All active sites on the surface are assumed to have equal energy.</p>
+    <div style="background-color:#fcfcfc;padding:15px;border-left:4px solid #007bff;margin:10px 0;font-family:'Times New Roman',Times,serif;font-size:1.1rem;overflow-x:auto;">
+      <i>Non-linear form:</i><br>
+      q<sub>e</sub> = (q<sub>max</sub> · K<sub>L</sub> · C<sub>e</sub>) / (1 + K<sub>L</sub> · C<sub>e</sub>) &nbsp; ... (1)<br><br>
+      <i>Linear form:</i><br>
+      C<sub>e</sub>/q<sub>e</sub> = (1/q<sub>max</sub>) · C<sub>e</sub> + 1/(q<sub>max</sub> · K<sub>L</sub>) &nbsp; ... (2)<br>
+      <span style="color:#555;font-size:0.9rem;">(y = mx + c)</span>
+    </div>
+    <p>This model is analyzed by plotting C<sub>e</sub>/q<sub>e</sub> against C<sub>e</sub>.</p>
+    <p><strong>B. Freundlich Isotherm Model</strong><br>Describes adsorption on a heterogeneous adsorbent surface, allowing multilayer formation.</p>
+    <div style="background-color:#fcfcfc;padding:15px;border-left:4px solid #28a745;margin:10px 0;font-family:'Times New Roman',Times,serif;font-size:1.1rem;overflow-x:auto;">
+      <i>Non-linear form:</i><br>
+      q<sub>e</sub> = K<sub>f</sub> · C<sub>e</sub><sup>1/n<sub>f</sub></sup> &nbsp; ... (3)<br><br>
+      <i>Linear form:</i><br>
+      Log q<sub>e</sub> = (1/n<sub>f</sub>) · Log C<sub>e</sub> + Log K<sub>f</sub> &nbsp; ... (4)<br>
+      <span style="color:#555;font-size:0.9rem;">(y = mx + c)</span>
+    </div>
+    <p>The Freundlich model is analyzed by plotting log q<sub>e</sub> against log C<sub>e</sub>.</p>
+    <h3 style="margin-top:25px;">5. Advantages of Oil Palm Fronds in Green Chemistry</h3>
+    <p>OPF is one of the largest biomass wastes from oil palm plantations, potentially reaching hundreds of millions of tonnes per year. In South Sumatra, oil palm is the primary commodity, making OPF readily available including on the Unsri campus grounds.</p>
+    <div style="text-align:center;margin:20px 0;">
+      <img src="gambar3.jpg" alt="Third Illustration" style="max-width:100%;height:auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1);margin-bottom:10px;">
+      <br><small><i>Figure 3. Caption for your third figure goes here.</i></small>
+    </div>
+    <p>From a green chemistry perspective, converting OPF into activated carbon aligns with waste reduction and renewable resource utilization principles, reducing dependence on other raw materials such as wood or coal, while adding value to previously underutilized waste.</p>
+    <p>Beyond technical and environmental benefits, utilizing OPF for activated carbon also brings significant socio-economic impacts. OPF processing can create new business opportunities in palm-producing regions, including around the Unsri campus, create employment, and increase local community income. This approach supports a circular economy by turning waste into high-value products while helping to reduce carbon emissions.</p>
   `
 };
 
@@ -633,6 +692,8 @@ li { font-size:0.88rem; line-height:1.7; color:var(--text-mid); margin-bottom:4p
 .reg-result strong { color:var(--green-dark); }
 .charts-flex { display:flex; gap:14px; flex-wrap:wrap; }
 .charts-flex .chart-container { flex:1; min-width:260px; }
+
+/* ★★★ PERUBAHAN UTAMA: Essay textarea lebih besar & auto-expand ★★★ */
 .essay-q { background:#fff; border:1px solid var(--border); border-left:4px solid var(--gold); border-radius:6px; padding:14px 16px; margin-bottom:14px; }
 .essay-q h4 { font-size:0.9rem; color:var(--green-dark); margin-bottom:8px; }
 .essay-q p  { font-size:0.85rem; margin-bottom:8px; color:var(--text-mid); }
@@ -653,6 +714,8 @@ li { font-size:0.88rem; line-height:1.7; color:var(--text-mid); margin-bottom:4p
   line-height:1.7;
 }
 .essay-q textarea:focus { border-color:var(--green-mid); }
+
+/* ★★★ PERUBAHAN UTAMA: Conclusion textarea lebih besar ★★★ */
 .concl-box { background:#fff; border:1px solid var(--border); border-radius:8px; padding:14px; margin-bottom:14px; }
 .concl-box textarea {
   width:100%;
@@ -667,6 +730,7 @@ li { font-size:0.88rem; line-height:1.7; color:var(--text-mid); margin-bottom:4p
   overflow-y:hidden;
   line-height:1.7;
 }
+
 .wc-row { display:flex; justify-content:flex-end; align-items:center; margin-top:4px; gap:8px; }
 .wc-display { font-size:0.75rem; font-family:'Arial',sans-serif; color:var(--text-light); }
 .wc-display.warn { color:#c0392b; font-weight:bold; }
@@ -694,6 +758,8 @@ li { font-size:0.88rem; line-height:1.7; color:var(--text-mid); margin-bottom:4p
 .chart-input-grid .cin-label { font-size:0.72rem; font-family:'Arial',sans-serif; text-align:center; padding:4px; background:var(--green-dark); color:#fff; border-radius:4px; }
 .chart-input-grid input { padding:5px 6px; border:1px solid var(--border); border-radius:4px; font-size:0.8rem; font-family:'Arial',sans-serif; text-align:center; width:100%; outline:none; }
 .chart-input-grid input:focus { border-color:var(--green-mid); }
+
+/* ★★★ PRINT CSS YANG DIPERBAIKI ★★★ */
 @media print {
   body { background:#fff; overflow:visible; }
   #book-wrapper { display:block; overflow:visible; height:auto; }
@@ -709,6 +775,8 @@ li { font-size:0.88rem; line-height:1.7; color:var(--text-mid); margin-bottom:4p
     min-height:auto !important;
   }
   .btn-sim,.btn-refresh,.btn-calc,.btn-print,.nav-btn { display:none; }
+
+  /* Essay textareas: tampil penuh saat print */
   .essay-q textarea {
     height:auto !important;
     min-height:unset !important;
@@ -722,6 +790,8 @@ li { font-size:0.88rem; line-height:1.7; color:var(--text-mid); margin-bottom:4p
     font-size:0.85rem !important;
     line-height:1.7 !important;
   }
+
+  /* Conclusion textarea: tampil penuh saat print */
   .concl-box textarea {
     height:auto !important;
     min-height:unset !important;
@@ -735,9 +805,13 @@ li { font-size:0.88rem; line-height:1.7; color:var(--text-mid); margin-bottom:4p
     font-size:0.85rem !important;
     line-height:1.7 !important;
   }
+
+  /* Hindari pemotongan di tengah elemen */
   .essay-q { page-break-inside:avoid; break-inside:avoid; }
   .concl-box { page-break-inside:avoid; break-inside:avoid; }
   #page-11, #page-12 { page-break-inside:auto; }
+
+  /* Gunakan div sebagai pengganti textarea saat print */
   textarea { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 }
 </style>
@@ -809,82 +883,25 @@ li { font-size:0.88rem; line-height:1.7; color:var(--text-mid); margin-bottom:4p
   </div>
 </div>
 
-<!-- PAGE 4 — INFO UMUM & CPL (DIPERBARUI: hanya CPL-3, layout ditingkatkan) -->
+<!-- PAGE 4 — INFO UMUM & CPL -->
 <div class="page" id="page-4">
   <div class="page-header"><h2 id="pg4_header">🎯 Informasi Umum &amp; CPL</h2><div class="pg-num">4</div></div>
   <div class="page-content">
-
-    <!-- Informasi Praktikum — Grid Card -->
-    <div style="background:linear-gradient(135deg,#e8f5ee,#f0faf4);border:1px solid #a8d8b8;border-radius:10px;padding:18px 22px;margin-bottom:20px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 28px;">
-      <div>
-        <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--green-mid);font-family:'Arial',sans-serif;margin-bottom:3px;">Judul</div>
-        <div style="font-size:0.92rem;font-weight:bold;color:var(--green-dark);font-family:'Arial',sans-serif;">Adsorpsi Larutan</div>
-      </div>
-      <div>
-        <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--green-mid);font-family:'Arial',sans-serif;margin-bottom:3px;">Mata Kuliah</div>
-        <div style="font-size:0.92rem;font-weight:bold;color:var(--green-dark);font-family:'Arial',sans-serif;">Praktikum Kimia Fisika 1</div>
-      </div>
-      <div>
-        <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--green-mid);font-family:'Arial',sans-serif;margin-bottom:3px;">SKS</div>
-        <div style="font-size:0.92rem;font-weight:bold;color:var(--green-dark);font-family:'Arial',sans-serif;">1 SKS Praktikum</div>
-      </div>
-      <div>
-        <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--green-mid);font-family:'Arial',sans-serif;margin-bottom:3px;">Waktu</div>
-        <div style="font-size:0.92rem;font-weight:bold;color:var(--green-dark);font-family:'Arial',sans-serif;">±170 menit (termasuk simulasi digital)</div>
-      </div>
-    </div>
-
-    <!-- CPL Header -->
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
-      <div style="width:4px;height:28px;background:var(--green-dark);border-radius:2px;flex-shrink:0;"></div>
-      <h3 id="pg4_cpl_title" style="margin:0;font-size:1rem;color:var(--green-dark);">📚 Capaian Pembelajaran Lulusan (CPL)</h3>
-    </div>
-
-    <!-- CPL-3 Single Card -->
-    <div style="background:#fff;border:1px solid #a8d8b8;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.07);margin-bottom:20px;">
-      <div style="background:linear-gradient(135deg,var(--green-dark),var(--green-mid));padding:12px 20px;display:flex;align-items:center;gap:12px;">
-        <span id="pg4_cpl3_code" style="background:var(--gold);color:var(--green-dark);font-weight:bold;font-size:0.82rem;padding:4px 14px;border-radius:20px;font-family:'Arial',sans-serif;">CPL-3</span>
-        <span style="color:rgba(255,255,255,0.85);font-size:0.8rem;font-family:'Arial',sans-serif;">Capaian Pembelajaran Lulusan</span>
-      </div>
-      <div style="padding:16px 20px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;">
-        <div>
-          <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--green-mid);font-family:'Arial',sans-serif;margin-bottom:7px;">Deskripsi Capaian</div>
-          <p id="pg4_cpl3_desc" style="margin:0;font-size:0.88rem;color:var(--text-mid);line-height:1.75;text-align:justify;">Mampu merencanakan, melaksanakan, dan melaporkan percobaan kimia secara saintifik dengan menerapkan prinsip keselamatan dan keamanan kerja (K3).</p>
-        </div>
-        <div style="min-width:190px;background:linear-gradient(135deg,#fff8e6,#fdf3d0);border:1px solid var(--gold);border-radius:8px;padding:12px 16px;">
-          <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:1.2px;color:#8a6500;font-family:'Arial',sans-serif;margin-bottom:7px;">Indikator</div>
-          <p id="pg4_cpl3_ind" style="margin:0;font-size:0.84rem;color:#5a4000;line-height:1.6;">Menyelesaikan seluruh tahap simulasi dan merekam data.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sub-CPMK Section -->
-    <div style="background:linear-gradient(135deg,var(--green-dark),#1e5a38);border-radius:10px;padding:16px 20px;">
-      <p id="pg4_subcpmk_title" style="margin:0 0 12px;font-size:0.87rem;color:var(--gold-light);font-weight:bold;line-height:1.55;border-bottom:1px solid rgba(255,255,255,0.15);padding-bottom:10px;">🔬 CPMK Praktikum: CPMK 3 — Mampu menganalisis fenomena kimia permukaan, khususnya parameter kesetimbangan proses adsorpsi, serta mengidentifikasi faktor-faktor yang mempengaruhinya secara kuantitatif.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-        <div style="background:rgba(255,255,255,0.09);border-radius:7px;padding:9px 13px;display:flex;gap:9px;align-items:flex-start;">
-          <span style="color:var(--gold);font-weight:bold;font-size:0.85rem;min-width:20px;margin-top:1px;">①</span>
-          <p id="pg4_subcpmk_1" style="margin:0;font-size:0.8rem;color:#d8edd9;line-height:1.55;">Mahasiswa mampu mendeskripsikan konsep adsorpsi dan perbedaannya dengan absorpsi.</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.09);border-radius:7px;padding:9px 13px;display:flex;gap:9px;align-items:flex-start;">
-          <span style="color:var(--gold);font-weight:bold;font-size:0.85rem;min-width:20px;margin-top:1px;">②</span>
-          <p id="pg4_subcpmk_2" style="margin:0;font-size:0.8rem;color:#d8edd9;line-height:1.55;">Mahasiswa mampu menentukan kapasitas adsorpsi (qₑ) dan konsentrasi akhir (Cₑ) dari data titrasi.</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.09);border-radius:7px;padding:9px 13px;display:flex;gap:9px;align-items:flex-start;">
-          <span style="color:var(--gold);font-weight:bold;font-size:0.85rem;min-width:20px;margin-top:1px;">③</span>
-          <p id="pg4_subcpmk_3" style="margin:0;font-size:0.8rem;color:#d8edd9;line-height:1.55;">Mahasiswa mampu memfitting data ke model isoterm Langmuir dan Freundlich.</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.09);border-radius:7px;padding:9px 13px;display:flex;gap:9px;align-items:flex-start;">
-          <span style="color:var(--gold);font-weight:bold;font-size:0.85rem;min-width:20px;margin-top:1px;">④</span>
-          <p id="pg4_subcpmk_4" style="margin:0;font-size:0.8rem;color:#d8edd9;line-height:1.55;">Mahasiswa mampu menginterpretasikan nilai R² dan memilih model yang lebih sesuai.</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.09);border-radius:7px;padding:9px 13px;display:flex;gap:9px;align-items:flex-start;grid-column:span 2;">
-          <span style="color:var(--gold);font-weight:bold;font-size:0.85rem;min-width:20px;margin-top:1px;">⑤</span>
-          <p id="pg4_subcpmk_5" style="margin:0;font-size:0.8rem;color:#d8edd9;line-height:1.55;">Mahasiswa mampu menarik kesimpulan yang sahih dari hasil analisis isoterm.</p>
-        </div>
-      </div>
-    </div>
-
+    <div class="info-box"><h4 id="pg4_info_title">📌 Informasi Praktikum</h4><p id="pg4_info_body"></p></div>
+    <h3 id="pg4_cpl_title">📚 CPL</h3>
+    <table class="cpl-table">
+      <thead><tr><th id="pg4_th1">Kode CPL</th><th id="pg4_th2">Deskripsi</th><th id="pg4_th3">Indikator</th></tr></thead>
+      <tbody>
+        <tr><td><strong id="pg4_cpl1_code">CPL-1</strong></td><td id="pg4_cpl1_desc"></td><td id="pg4_cpl1_ind"></td></tr>
+        <tr><td><strong id="pg4_cpl2_code">CPL-2</strong></td><td id="pg4_cpl2_desc"></td><td id="pg4_cpl2_ind"></td></tr>
+        <tr><td><strong id="pg4_cpl3_code">CPL-3</strong></td><td id="pg4_cpl3_desc"></td><td id="pg4_cpl3_ind"></td></tr>
+      </tbody>
+    </table>
+    <h3 id="pg4_subcpmk_title">🔬 Sub-CPMK</h3>
+    <ul>
+      <li id="pg4_subcpmk_1"></li><li id="pg4_subcpmk_2"></li>
+      <li id="pg4_subcpmk_3"></li><li id="pg4_subcpmk_4"></li><li id="pg4_subcpmk_5"></li>
+    </ul>
   </div>
 </div>
 
@@ -1550,6 +1567,7 @@ function printLKM() {
   saveEssays(); autoSave();
   const id = JSON.parse(localStorage.getItem('lkm_identity')||'{}');
   if (!id.nim && !id.nama) { alert(D['pg12_alert_no_id']||'Isi identitas dulu.'); return; }
+  // Expand all textareas before printing
   document.querySelectorAll('.essay-q textarea, .concl-box textarea').forEach(ta => {
     ta.style.height = 'auto';
     ta.style.height = ta.scrollHeight + 'px';
@@ -1557,6 +1575,7 @@ function printLKM() {
   window.print();
 }
 
+// ★★★ FUNGSI AUTO-RESIZE TEXTAREA ★★★
 function autoResizeTA(el) {
   if (!el) return;
   el.style.height = 'auto';
@@ -1578,6 +1597,7 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(initAllAutoResize, 300);
 });
 
+// Trigger resize saat halaman print
 window.addEventListener('beforeprint', function() {
   document.querySelectorAll('.essay-q textarea, .concl-box textarea').forEach(ta => {
     ta.style.height = 'auto';
